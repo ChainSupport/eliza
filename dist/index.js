@@ -19,7 +19,9 @@ var character = {
   ],
   settings: {
     secrets: {
-      ASSET_HUB_PRIVATE_KEY: process.env.ASSET_HUB_PRIVATE_KEY?.trim()
+      ASSET_HUB_PRIVATE_KEY: process.env.ASSET_HUB_PRIVATE_KEY?.trim(),
+      ASSET_HUB_RPC_URL: process.env.ASSET_HUB_RPC_URL?.trim(),
+      SUBSCAN_X_API_KEY: process.env.SUBSCAN_X_API_KEY?.trim()
     },
     avatar: "https://elizaos.github.io/eliza-avatars/Eliza/portrait.png"
   },
@@ -141,5 +143,5 @@ export {
   character
 };
 
-//# debugId=2CC2EAD4E211A2BF64756E2164756E21
+//# debugId=312BA984AF6A64CD64756E2164756E21
 //# sourceMappingURL=index.js.map
