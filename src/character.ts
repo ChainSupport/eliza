@@ -44,6 +44,8 @@ export const character: Character = {
   settings: {
     secrets: {
       "ASSET_HUB_PRIVATE_KEY": process.env.ASSET_HUB_PRIVATE_KEY?.trim(),
+      "ASSET_HUB_RPC_URL": process.env.ASSET_HUB_RPC_URL?.trim(),
+      "SUBSCAN_X_API_KEY": process.env.SUBSCAN_X_API_KEY?.trim(),
     },
     avatar: 'https://elizaos.github.io/eliza-avatars/Eliza/portrait.png',
   },
