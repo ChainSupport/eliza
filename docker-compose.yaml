@@ -20,7 +20,10 @@ services:
     networks:
       - eliza-network
   elizaos:
-    image: ${DOCKER_IMAGE}
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: eliza-polkadot-assethub-agent:latest
     container_name: elizaos
     environment:
 
@@ -63,7 +66,7 @@ services:
       # - REDPILL_API_KEY=${REDPILL_API_KEY:-}
     ports:
       - '3000:3000'
-      - '50000-50100:50000-50100/udp'
+      # - '50000-50100:50000-50100/udp'
     depends_on:
       postgres:
         condition: service_healthy
