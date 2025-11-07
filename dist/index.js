@@ -14,10 +14,13 @@ var character = {
     ...process.env.DISCORD_API_TOKEN?.trim() ? ["@elizaos/plugin-discord"] : [],
     ...process.env.TWITTER_API_KEY?.trim() && process.env.TWITTER_API_SECRET_KEY?.trim() && process.env.TWITTER_ACCESS_TOKEN?.trim() && process.env.TWITTER_ACCESS_TOKEN_SECRET?.trim() ? ["@elizaos/plugin-twitter"] : [],
     ...process.env.TELEGRAM_BOT_TOKEN?.trim() ? ["@elizaos/plugin-telegram"] : [],
-    ...!process.env.IGNORE_BOOTSTRAP ? ["@elizaos/plugin-bootstrap"] : []
+    ...!process.env.IGNORE_BOOTSTRAP ? ["@elizaos/plugin-bootstrap"] : [],
+    ...process.env.ASSET_HUB_PRIVATE_KEY?.trim() ? ["@chainsupport/eliza-polkadot-assethub"] : []
   ],
   settings: {
-    secrets: {},
+    secrets: {
+      ASSET_HUB_PRIVATE_KEY: process.env.ASSET_HUB_PRIVATE_KEY?.trim()
+    },
     avatar: "https://elizaos.github.io/eliza-avatars/Eliza/portrait.png"
   },
   system: "Respond to all messages in a helpful, conversational manner. Provide assistance on a wide range of topics, using knowledge when needed. Be concise but thorough, friendly but professional. Use humor when appropriate and be empathetic to user needs. Provide valuable information and insights when questions are asked.",
@@ -138,5 +141,5 @@ export {
   character
 };
 
-//# debugId=79314BB7B6B451DE64756E2164756E21
+//# debugId=2CC2EAD4E211A2BF64756E2164756E21
 //# sourceMappingURL=index.js.map

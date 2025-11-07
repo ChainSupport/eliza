@@ -4,7 +4,7 @@
     "": {
       "name": "eliza-polkadot-assethub-agent",
       "dependencies": {
-        "@chainsupport/eliza-polkadot-assethub": "github:ChainSupport/eliza-plugin-dot",
+        "@chainsupport/eliza-polkadot-assethub": "^1.0.1",
         "@elizaos/cli": "1.6.4",
         "@elizaos/client": "1.6.4",
         "@elizaos/core": "1.6.4",
@@ -125,7 +125,7 @@
 
     "@cfworker/json-schema": ["@cfworker/json-schema@4.1.1", "", {}, "sha512-gAmrUZSGtKc3AiBL71iNWxDsyUC5uMaKKGdvzYsBoTW/xi42JQHl7eKV2OYzCUqvc+D2RCcf7EXY2iCyFIk6og=="],
 
-    "@chainsupport/eliza-polkadot-assethub": ["@chainsupport/eliza-polkadot-assethub@github:ChainSupport/eliza-plugin-dot#07fc2d0", { "dependencies": { "@eliza-dot-aes/common": "^1.0.7", "@eliza-dot-aes/sr25519-aes": "^1.0.2", "@elizaos/core": "1.0.8", "@noble/curves": "^1.9.7", "@noble/ed25519": "^2.3.0", "@polkadot/api": "^16.2.1", "@polkadot/apps-config": "^0.162.1", "@polkadot/keyring": "^13.5.3", "@polkadot/types": "^16.2.1", "@polkadot/types-codec": "^16.4.4", "@polkadot/util": "^13.5.3", "@polkadot/util-crypto": "^13.5.1", "@scure/sr25519": "^0.2.0", "axios": "^1.11.0", "ethereum-cryptography": "^3.2.0", "jssha": "^3.3.1", "node-cache": "^5.1.2" } }, "ChainSupport-eliza-plugin-dot-07fc2d0"],
+    "@chainsupport/eliza-polkadot-assethub": ["@chainsupport/eliza-polkadot-assethub@1.0.1", "", { "dependencies": { "@eliza-dot-aes/common": "^1.0.7", "@eliza-dot-aes/sr25519-aes": "^1.0.2", "@elizaos/core": "1.0.8", "@noble/curves": "^1.9.7", "@noble/ed25519": "^2.3.0", "@polkadot/api": "^16.2.1", "@polkadot/apps-config": "^0.162.1", "@polkadot/keyring": "^13.5.3", "@polkadot/types": "^16.2.1", "@polkadot/types-codec": "^16.4.4", "@polkadot/util": "^13.5.3", "@polkadot/util-crypto": "^13.5.1", "@scure/sr25519": "^0.2.0", "axios": "^1.11.0", "ethereum-cryptography": "^3.2.0", "jssha": "^3.3.1", "node-cache": "^5.1.2" } }, "sha512-/TZGcpPJhzSGjB7icbUQUe+2Xf9xgkaeCeSDbkH1TRfghCbzh7VHJEU4kXhuNfdvVxGwg2TAg3trgxf4T97lOw=="],
 
     "@chevrotain/cst-dts-gen": ["@chevrotain/cst-dts-gen@11.0.3", "", { "dependencies": { "@chevrotain/gast": "11.0.3", "@chevrotain/types": "11.0.3", "lodash-es": "4.17.21" } }, "sha512-BvIKpRLeS/8UbfxXxgC33xOumsacaeCKAjAeLyOn7Pcp95HiRbrpl14S+9vaZLolnbssPIUuiUd8IvgkRyt6NQ=="],
 
