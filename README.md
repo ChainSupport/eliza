@@ -42,6 +42,19 @@ Then create a new chat and ask questions:
 
 ![new chat](./docs/images/new-chat.jpg)
 
+#### Ask Question For Example
+
+1. Agent abilities
+![abilities](./docs/images/first-question.jpg)
+
+2. My wallet Info
+![address](./docs/images/my-address.jpg)
+
+3. Transfer with encrpyto Memo
+
+![trasnfer](./docs/images/transfer.jpg)
+
+> see transfer detail [https://assethub-polkadot.subscan.io/extrinsic/0x5ec0784fe5475f7d4a4cd70a4acce0f498376728a770cf534e349db83127e197](https://assethub-polkadot.subscan.io/extrinsic/0x5ec0784fe5475f7d4a4cd70a4acce0f498376728a770cf534e349db83127e197)
 ## License
 
 This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
