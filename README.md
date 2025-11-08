@@ -3,15 +3,18 @@
 ## Configure Your Environment
 
 ### Create the `.env` file
+
+
 ```
-touch .env
+git clone https://github.com/ChainSupport/eliza.git
+cd eliza
+cp .env.example.env ./env
 ```
 Then set the variables below in the `.env` file:
 
 ```
 OPENROUTER_API_KEY=
 OPENAI_API_KEY=
-PGLITE_DATA_DIR=./.eliza/.elizadb
 ASSET_HUB_PRIVATE_KEY=
 
 ```
