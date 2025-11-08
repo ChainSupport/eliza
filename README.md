@@ -8,7 +8,7 @@
 1. [node](https://nodejs.org/en/download) version: v23.3.0 or above
 2. [bun](https://bun.com/docs/installation): latest
 
-#### docker (if you rum agent in docker)
+#### docker (if you run agent in docker)
 none
 
 ### Create the `.env` file
