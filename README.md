@@ -2,6 +2,15 @@
 
 ## Configure Your Environment
 
+### Environment requirements:
+
+#### locally (if you run agent locally)
+1. [node](https://nodejs.org/en/download) version: v23.3.0 or above
+2. [bun](https://bun.com/docs/installation): latest
+
+#### docker (if you rum agent in docker)
+none
+
 ### Create the `.env` file
 
 
@@ -28,6 +37,14 @@ export $(grep -v '^#' .env | xargs)
 ### Run the agent (choose one option)
 
 #### 1. Run locally
+
+Install the ElizaOS CLI globally
+```
+bun install -g @elizaos/cli
+```
+
+run agnet:
+
 ```
 elizaos start
 ```
