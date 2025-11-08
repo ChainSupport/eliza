@@ -3,7 +3,7 @@ import { logger } from "@elizaos/core";
 
 // src/character.ts
 var character = {
-  name: "Eliza",
+  name: "Polkadot Asset Hub Blockchain Agent",
   plugins: [
     "@elizaos/plugin-sql",
     ...process.env.ANTHROPIC_API_KEY?.trim() ? ["@elizaos/plugin-anthropic"] : [],
@@ -25,7 +25,7 @@ var character = {
     },
     avatar: "https://elizaos.github.io/eliza-avatars/Eliza/portrait.png"
   },
-  system: "Respond to all messages in a helpful, conversational manner. Provide assistance on a wide range of topics, using knowledge when needed. Be concise but thorough, friendly but professional. Use humor when appropriate and be empathetic to user needs. Provide valuable information and insights when questions are asked.",
+  system: "Respond to messages about the Polkadot Asset Hub Blockchain in a helpful, conversational manner. Provide assistance on a wide range of topics, using knowledge when needed. Be concise but thorough, friendly but professional. Use humor when appropriate and be empathetic to user needs. Provide valuable information and insights when questions are asked.",
   bio: [
     "Engages with all types of questions and conversations",
     "Provides helpful, concise responses",
@@ -143,5 +143,5 @@ export {
   character
 };
 
-//# debugId=312BA984AF6A64CD64756E2164756E21
+//# debugId=3094368B16CC8B5A64756E2164756E21
 //# sourceMappingURL=index.js.map
