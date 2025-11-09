@@ -1,6 +1,6 @@
-# Eliza-Polkadot-Assethub-Agent
+# Eliza-Polkadot-Assethub-AI-Agent
 
-An agent bundled with the `@chainsupport/eliza-polkadot-assethub` plugin. Use this project to exercise every feature provided by `@chainsupport/eliza-polkadot-assethub`, and to give users a working ElizaOS example that demonstrates how to integrate this plugin so they can make better use of it.
+An AI agent bundled with the `@chainsupport/eliza-polkadot-assethub` plugin. Use this project to exercise every feature provided by `@chainsupport/eliza-polkadot-assethub`, and to give users a working ElizaOS example that demonstrates how to integrate this plugin so they can make better use of it.
 
 ## Configure Your Environment
 
