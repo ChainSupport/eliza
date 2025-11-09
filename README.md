@@ -1,50 +1,50 @@
 # Eliza-Polkadot-Assethub-Agent
 
+An agent bundled with the `@chainsupport/eliza-polkadot-assethub` plugin. Use this project to exercise every feature provided by `@chainsupport/eliza-polkadot-assethub`, and to reference a working Eliza setup that consumes this plugin.
+
 ## Configure Your Environment
 
-### Environment requirements:
+### Environment Requirements
 
-#### locally (if you run agent locally)
-1. [node](https://nodejs.org/en/download) version: v23.3.0 or above
-2. [bun](https://bun.com/docs/installation): latest
+#### Local (if you run the agent on your machine)
+1. [node](https://nodejs.org/en/download) version v23.3.0 or later
+2. [bun](https://bun.com/docs/installation) latest release
 
-#### docker (if you run agent in docker)
-none
+#### Docker (if you run the agent in Docker)
+No additional requirements
 
 ### Create the `.env` file
-
 
 ```
 git clone https://github.com/ChainSupport/eliza.git
 cd eliza
-cp .env.example.env ./env
+cp .env.example.env .env
 ```
-Then set the variables below in the `.env` file:
+
+Then set the variables below in `.env`:
 
 ```
 OPENROUTER_API_KEY=
 OPENAI_API_KEY=
 ASSET_HUB_PRIVATE_KEY=
-
 ```
 
-Run the command below to load the variables into the current shell session:
+Run the command below to load the variables into your current shell session:
 
 ```
 export $(grep -v '^#' .env | xargs)
 ```
 
-### Run the agent (choose one option)
+### Run the Agent (choose one option)
 
 #### 1. Run locally
 
-Install the ElizaOS CLI globally
+Install the ElizaOS CLI globally:
 ```
 bun install -g @elizaos/cli
 ```
 
-run agnet:
-
+Start the agent:
 ```
 elizaos start
 ```
@@ -58,23 +58,23 @@ docker-compose up --build
 
 Visit [http://localhost:3000/](http://localhost:3000/)
 
-Then create a new chat and ask questions:
+Create a new chat and start asking questions:
 
 ![new chat](./docs/images/new-chat.jpg)
 
-#### Ask Question For Example
+#### Example Questions
 
-1. Agent abilities
+1. Ask about the agent’s abilities:
 ![abilities](./docs/images/first-question.jpg)
 
-2. My wallet Info
+2. Retrieve wallet information:
 ![address](./docs/images/my-address.jpg)
 
-3. Transfer with encrpyto Memo
+3. Submit a transfer with an encrypted memo:
+![transfer](./docs/images/transfer.jpg)
 
-![trasnfer](./docs/images/transfer.jpg)
+> View the transfer details: [https://assethub-polkadot.subscan.io/extrinsic/0x5ec0784fe5475f7d4a4cd70a4acce0f498376728a770cf534e349db83127e197](https://assethub-polkadot.subscan.io/extrinsic/0x5ec0784fe5475f7d4a4cd70a4acce0f498376728a770cf534e349db83127e197)
 
-> see transfer detail [https://assethub-polkadot.subscan.io/extrinsic/0x5ec0784fe5475f7d4a4cd70a4acce0f498376728a770cf534e349db83127e197](https://assethub-polkadot.subscan.io/extrinsic/0x5ec0784fe5475f7d4a4cd70a4acce0f498376728a770cf534e349db83127e197)
 ## License
 
 This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
