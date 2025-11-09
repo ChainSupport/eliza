@@ -7,7 +7,7 @@ An AI agent bundled with the `@chainsupport/eliza-polkadot-assethub` plugin. Use
 ### Environment Requirements
 
 #### Local (if you run the agent on your machine)
-1. [node](https://nodejs.org/en/download) version v23.3.0 or later
+1. [node](https://nodejs.org/en/download) version v23.3.0 (or version >= v23.3.0)
 2. [bun](https://bun.com/docs/installation) latest release
 
 #### Docker (if you run the agent in Docker)
