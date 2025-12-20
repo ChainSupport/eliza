@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@chainsupport/eliza-polkadot-assethub':
-        specifier: ^1.0.26
-        version: 1.0.26(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(bufferutil@4.0.9)(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(react-is@16.13.1)(react@18.3.1)(utf-8-validate@5.0.10)(yaml@2.8.2)
+        specifier: ^1.0.27
+        version: 1.0.27(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(bufferutil@4.0.9)(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(react-is@16.13.1)(react@18.3.1)(utf-8-validate@5.0.10)(yaml@2.8.2)
       '@elizaos/cli':
         specifier: 1.6.4
         version: 1.6.4(@langchain/core@1.1.7(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11)))(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.6)(axios@1.13.2)(bufferutil@4.0.9)(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))(utf-8-validate@5.0.10)(whatwg-url@7.1.0)(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))
@@ -308,8 +308,8 @@ packages:
   '@cfworker/json-schema@4.1.1':
     resolution: {integrity: sha512-gAmrUZSGtKc3AiBL71iNWxDsyUC5uMaKKGdvzYsBoTW/xi42JQHl7eKV2OYzCUqvc+D2RCcf7EXY2iCyFIk6og==}
 
-  '@chainsupport/eliza-polkadot-assethub@1.0.26':
-    resolution: {integrity: sha512-uo/bGAyNnejOqGfwfll3cxpebAovW2OW/cijy6jUWHrpoynGwd8rcDObgxDFWUKrdQ3qViM4WnefBf00syfdeA==}
+  '@chainsupport/eliza-polkadot-assethub@1.0.27':
+    resolution: {integrity: sha512-KUYT/tp2swkUEnxYWS4F14Xy6UM8yTx9RprTAIj00cDSqVXJINE3LRlKyyf68MjvaR103bT+TXsN5/4DBteYfA==}
 
   '@chevrotain/cst-dts-gen@11.0.3':
     resolution: {integrity: sha512-BvIKpRLeS/8UbfxXxgC33xOumsacaeCKAjAeLyOn7Pcp95HiRbrpl14S+9vaZLolnbssPIUuiUd8IvgkRyt6NQ==}
@@ -381,8 +381,8 @@ packages:
   '@elizaos/core@1.6.4':
     resolution: {integrity: sha512-9c72Ofw4Xoa9xvehaZ9qApT76vjJnfAzzyIbai2LGaxfF4BL0KJhcR/Xp4NJDKj9vKka85tQpFBwtxQQIZNhvA==}
 
-  '@elizaos/core@1.6.5':
-    resolution: {integrity: sha512-3+k/YPmaicE8LzserYM4ud8ikl3GbYfnEjQMfJaxKN4cLed3KVYp8+OCb4kVm5xmbT780aiw5qAlGzG70/VN6w==}
+  '@elizaos/core@1.7.0':
+    resolution: {integrity: sha512-/zlvok3Tn/8L8ehpRNyH63b8vzveepja3GI6IKrQufSCGD+vdzGx0EhcmXI87vaPP40SRSc4Qm93R24wXsG5HQ==}
 
   '@elizaos/plugin-bootstrap@1.6.4':
     resolution: {integrity: sha512-WxfpcB1sV6Am3TSjeEf0E/kzCic7S4NlJrbbAYg0W4ISUYuSC96yfTQpvpYF1JXq8DFR9AAw1KhYCprMdTpGBQ==}
@@ -7110,11 +7110,11 @@ snapshots:
 
   '@cfworker/json-schema@4.1.1': {}
 
-  '@chainsupport/eliza-polkadot-assethub@1.0.26(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(bufferutil@4.0.9)(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(react-is@16.13.1)(react@18.3.1)(utf-8-validate@5.0.10)(yaml@2.8.2)':
+  '@chainsupport/eliza-polkadot-assethub@1.0.27(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(bufferutil@4.0.9)(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(react-is@16.13.1)(react@18.3.1)(utf-8-validate@5.0.10)(yaml@2.8.2)':
     dependencies:
       '@eliza-dot-aes/common': 1.0.8(@polkadot/util@13.5.9)
       '@eliza-dot-aes/sr25519-aes': 1.0.5(@polkadot/util@13.5.9)
-      '@elizaos/core': 1.6.5(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))
+      '@elizaos/core': 1.7.0(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))
       '@noble/curves': 1.9.7
       '@noble/ed25519': 2.3.0
       '@polkadot/api': 16.5.4(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -7470,7 +7470,7 @@ snapshots:
       - typeorm
       - ws
 
-  '@elizaos/core@1.6.5(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))':
+  '@elizaos/core@1.7.0(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))':
     dependencies:
       '@langchain/core': 1.1.7(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11))
       '@langchain/textsplitters': 1.0.1(@langchain/core@1.1.7(@opentelemetry/api@1.9.0)(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@4.1.11)))
