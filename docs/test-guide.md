@@ -1,6 +1,3 @@
-
-## Configure Your Environment
-
 ### Environment Requirements
 
 #### Local (if you run the agent on your machine)
@@ -10,14 +7,17 @@
 #### Docker (if you run the agent in Docker)
 No additional requirements
 
-### Create the `.env` file
-
+### Run the Agent (choose one option)
 ```
 git clone https://github.com/ChainSupport/eliza.git
 cd eliza
+```
+#### 1. Run locally
+
+Create the `.env` file
+```
 cp .env.example.env .env
 ```
-
 Then set the variables below in `.env`:
 
 ```
@@ -25,17 +25,6 @@ OPENROUTER_API_KEY=
 OPENAI_API_KEY=
 ASSET_HUB_PRIVATE_KEY=
 ```
-
-Run the command below to load the variables into your current shell session:
-
-```
-export $(grep -v '^#' .env | xargs)
-```
-
-### Run the Agent (choose one option)
-
-#### 1. Run locally
-
 Install the ElizaOS CLI globally:
 ```
 bun install -g @elizaos/cli
@@ -47,16 +36,14 @@ elizaos start
 ```
 
 #### 2. Run with Docker
+Set the variables below in `docker-compose.yaml`:
+
+```
+OPENROUTER_API_KEY=
+OPENAI_API_KEY=
+ASSET_HUB_PRIVATE_KEY=
+```
+
 ```
 docker-compose up --build
 ```
-
-### Interact with the Polkadot Asset Hub Agent
-
-Visit [http://localhost:3000/](http://localhost:3000/)
-
-Create a new chat and start asking questions:
-
-![new chat](./images/new-chat.jpg)
-
-### Testing
