@@ -181,3 +181,4 @@ nixpacks.toml
 sample-env
 .env.example
 .env.sample
+.env
