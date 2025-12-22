@@ -13,7 +13,7 @@ An AI agent bundled with the `@chainsupport/eliza-polkadot-assethub` plugin. Use
 #### Docker (if you run the agent in Docker)
 No additional requirements
 
-### Create the `.env` file
+<!-- ### Create the `.env` file
 
 ```
 git clone https://github.com/ChainSupport/eliza.git
@@ -33,11 +33,26 @@ Run the command below to load the variables into your current shell session:
 
 ```
 export $(grep -v '^#' .env | xargs)
-```
+``` -->
 
 ### Run the Agent (choose one option)
-
+```
+git clone https://github.com/ChainSupport/eliza.git
+cd eliza
+```
 #### 1. Run locally
+
+Create the `.env` file
+```
+cp .env.example.env .env
+```
+Then set the variables below in `.env`:
+
+```
+OPENROUTER_API_KEY=
+OPENAI_API_KEY=
+ASSET_HUB_PRIVATE_KEY=
+```
 
 Install the ElizaOS CLI globally:
 ```
@@ -50,6 +65,14 @@ elizaos start
 ```
 
 #### 2. Run with Docker
+Set the variables below in `docker-compose.yaml`:
+
+```
+OPENROUTER_API_KEY=
+OPENAI_API_KEY=
+ASSET_HUB_PRIVATE_KEY=
+```
+
 ```
 docker-compose up --build
 ```
