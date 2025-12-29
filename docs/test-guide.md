@@ -47,3 +47,37 @@ ASSET_HUB_PRIVATE_KEY=
 ```
 docker-compose up --build
 ```
+
+### 手动测试
+
+#### 1. GET_MY_WALLET_INFO (get-my-wallet-info.ts)
+
+#### 2. USER_ASSETS_BALANCE （address-assets-balance.ts）
+* 查询DOT
+  input
+  ``` 
+  Get my wallet's native DOT balance
+  ```
+
+* 查询多资产
+* subscan 显示真实余额
+
+
+
+#### 3. TRANSFER_ASSETS (assets-transfer.ts)
+
+* 转账DOT
+* 转账多资产
+* subscan显示转账记录
+#### 4. SEND_MESSAGE_WITH_NO_TRANSFER (send-message.ts)
+* 发送消息
+* 在subscan查看消息 （说明已经发送并且加密）
+
+#### 5. MY_WALLET_HISTORY (my-wallet-history.ts)
+
+* 看到3和4所有记录， 并且均解密
+
+#### 6. GET_TRANSFER_DETAIL_BY_HASH (get_transfer_detail_by_hash.ts)
+* 看到转账记录， 并且解密
+
+#### 7. 证明to地址可以解密消息(直接使用 MY_WALLET_HISTORY)
