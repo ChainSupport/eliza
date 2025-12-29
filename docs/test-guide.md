@@ -48,7 +48,7 @@ ASSET_HUB_PRIVATE_KEY=
 docker-compose up --build
 ```
 
-### 手动测试
+### Manual Testing
 
 #### 1. GET_MY_WALLET_INFO (get-my-wallet-info.ts)
   input:
@@ -62,10 +62,10 @@ docker-compose up --build
   Account URL: https://assethub-polkadot.subscan.io/account/13GKHvBFjWuVjezV8cG6DMoK2FftY4awXXqKdunApnJGbvwd
   ```
   ![My Wallet Info on eliza](./v1-images/my-wallet-info-eliza.png)
-  在这里， 我们会获得我们的钱包地址以及链上余额， 测试通过.
+  Here, we get our wallet address and on-chain balance, test passed.
 
 #### 2. USER_ASSETS_BALANCE （address-assets-balance.ts）
-##### 1. 查询DOT
+##### 1. Query DOT
   input:
   ``` 
   Get my wallet's native DOT balance
@@ -77,8 +77,8 @@ docker-compose up --build
   ```
   ![My Native DOT Balance on eliza](./v1-images/my-dot-balance-eliza.png)
   ![My Native DOT Balance on subscan](./v1-images/my-dot-balance-subscan.png)
-  在这里， 我们看到在eliza agent中显示的Native DOT余额与subscan相同，测试通过。
-##### 2. 查询多资产 （DOTA）
+  Here, we can see that the Native DOT balance displayed in the eliza agent matches subscan, test passed.
+##### 2. Query Multi-Asset (DOTA)
   input:
   ```
   show my DOTA asset balance
@@ -90,9 +90,9 @@ docker-compose up --build
   ```
   ![My DOTA Balance on eliza](./v1-images/my-dota-balance-eliza.png)
   ![My DOTA Balance on ubscan](./v1-images/my-dota-balance-subscan.png)
-  在这里， 我们看到在eliza agent中显示的DOTA余额与subscan相同，测试通过。
+  Here, we can see that the DOTA balance displayed in the eliza agent matches subscan, test passed.
 
-##### 3. 查询一个非法地址的余额 （地址格式错误）
+##### 3. Query Balance of an Invalid Address (Address Format Error)
 input:
 ```
 Get ddDBKxnn69eo4pYZQbD8geFXFQDC2qC51qhvBEKgEYviahit native DOT balance
@@ -101,11 +101,11 @@ output:
 ```
 Invalid address or assetId: ddDBKxnn69eo4pYZQbD8geFXFQDC2qC51qhvBEKgEYviahit, null
 ```
-查询失败， 符合预期。 测试通过。
+Query failed as expected. Test passed.
 
 #### 3. TRANSFER_ASSETS (assets-transfer.ts)
 
-##### 1. 转账DOT
+##### 1. Transfer DOT
   input:
   ```
   Transfer 0.01 DOT to address 15DBKxnn69eo4pYZQbD8geFXFQDC2qC51qhvBEKgEYviahit
@@ -117,11 +117,11 @@ Invalid address or assetId: ddDBKxnn69eo4pYZQbD8geFXFQDC2qC51qhvBEKgEYviahit, nu
   Extrinsic URL: https://assethub-polkadot.subscan.io/extrinsic/0x43c3da59fdc72082a42452459de1e8c37b93e1f968dbaf4d33631ec339794d82
   ```
   ![transfer dot on eliza](./v1-images/transfer-dot-eliza.png)
-  点击 `Extrinsic URL`, 在subscan中看到交易
+  Click `Extrinsic URL` to view the transaction on subscan
   ![transfer dot on subscan](./v1-images/transfer-dot-subscan.png)
-  我们看到这笔交易已经上链， 并且在subscan中， 测试成功。
+  We can see that this transaction has been confirmed on-chain and is visible on subscan, test passed.
 
-##### 2.  转账多资产
+##### 2. Transfer Multi-Asset
   input:
   ```
   ransfer 1 DOTA to address 15DBKxnn69eo4pYZQbD8geFXFQDC2qC51qhvBEKgEYviahit
@@ -134,7 +134,7 @@ Invalid address or assetId: ddDBKxnn69eo4pYZQbD8geFXFQDC2qC51qhvBEKgEYviahit, nu
   ```
   ![transfer dota on eliza](./v1-images/transfer-dota-eliza.png)
   ![transfer dota on subscan](./v1-images/transfer-dota-subscan.png)
-  这笔交易成功， 并且在subscan中可以查询得到， 测试成功
+  This transaction was successful and can be queried on subscan, test passed.
 
 #### 4. SEND_MESSAGE_WITH_NO_TRANSFER (send-message.ts)
 input:
@@ -150,12 +150,12 @@ Extrinsic URL: https://assethub-polkadot.subscan.io/extrinsic/0xfe578930c9306434
 ```
 ![Send Message on eliza](./v1-images/send-message-eliza.png)
 ![Send Message on subscan](./v1-images/send-message-subscan.png)
-我们看到消息已经发送到链上， 并且已经进行加密， 包含在e字段当中。测试成功
+We can see that the message has been sent on-chain and is encrypted, contained in the e field. Test passed.
 
 #### 5. GET_TRANSFER_DETAIL_BY_HASH (get_transfer_detail_by_hash.ts)
 
-##### 1. 合法交易
-在这里， 我们获取上一步那笔交易的详细信息。
+##### 1. Valid Transaction
+Here, we retrieve the detailed information of the transaction from the previous step.
 
 input:
 ```
@@ -176,10 +176,10 @@ TxId: 0xfe578930c93064349ea1481da666483b81cc86aab59ac67011e63841c67bf3fa
 Extrinsic URL: https://assethub-polkadot.subscan.io/extrinsic/11003435-2
 ```
 ![Transaction Detail on eliza](./v1-images/transaction-details-eliza.png)
-在这里， 我们已经查询到步骤4中的那笔加密交易， 并且解密加密消息。测试成功。
+Here, we have successfully queried the encrypted transaction from step 4 and decrypted the encrypted message. Test passed.
 
-##### 2. 非法交易 （链上不存在）
-在这里， 我们试着查询一笔链上不存在的交易。
+##### 2. Invalid Transaction (Not on-chain)
+Here, we try to query a transaction that does not exist on-chain.
 input:
 ```
 Get transaction 0xdbef006350ab62d2bca01692a312bfba5bbbb10193c821ac6f6d36a7f9562edd detail
@@ -188,7 +188,7 @@ output:
 ```
 Failed to get transfer detail by hash on the POLKADOT AssetHub. error: TypeError: null is not an object (evaluating '(await (await fetch(url, options)).json()).data.extrinsic_index')
 ```
-错误交易抛出错误， 符合预期。 测试通过
+The invalid transaction throws an error as expected. Test passed.
 
 #### 6. MY_WALLET_HISTORY (my-wallet-history.ts)
 
@@ -233,6 +233,6 @@ Extrinsic URL: https://assethub-polkadot.subscan.io/extrinsic/11003155-2
 ```image.png
 ![my wallet history](./v1-images/my-wallet-history.png)
 
-在这里， 我们看到了我们在上面发送的所有交易， 并且memo被解密。 测试成功
+Here, we can see all the transactions we sent above, and the memo has been decrypted. Test passed.
 
 <!-- #### 7. 证明to地址可以解密消息(直接使用 MY_WALLET_HISTORY) -->
