@@ -27,7 +27,7 @@
     "dist"
   ],
   "dependencies": {
-    "@chainsupport/eliza-polkadot-assethub": "^1.0.31",
+    "@chainsupport/eliza-polkadot-assethub": "^1.0.32",
     "@elizaos/cli": "1.6.4",
     "@elizaos/client": "1.6.4",
     "@elizaos/core": "1.6.4",
